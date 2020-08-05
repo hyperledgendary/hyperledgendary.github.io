@@ -6,16 +6,16 @@ title: CI Pipelines Status
 ## Fabric Chaincode Java
 
 **Release 2.x Nightly Builds**
-![fcn](https://img.shields.io/azure-devops/build/hyperledger/d07733cd-1e69-47ff-9b57-1c8b53bcd14a/39/release-2.x?requestedForFilter=00000002-0000-8888-8000-000000000000)
+[![fcn](https://img.shields.io/azure-devops/build/hyperledger/d07733cd-1e69-47ff-9b57-1c8b53bcd14a/39/release-2.x?requestedForFilter=00000002-0000-8888-8000-000000000000)](https://dev.azure.com/Hyperledger/Fabric-Chaincode-Java/_build/latest?definitionId=39&branchName=release-2.x&requestedForFilter=00000002-0000-8888-8000-000000000000)
 
 **Release 1.4 Nightly Builds**
-![fcn](https://img.shields.io/azure-devops/build/hyperledger/d07733cd-1e69-47ff-9b57-1c8b53bcd14a/39/release-1.4?requestedForFilter=00000002-0000-8888-8000-000000000000)
+[![fcn](https://img.shields.io/azure-devops/build/hyperledger/d07733cd-1e69-47ff-9b57-1c8b53bcd14a/39/release-1.4?requestedForFilter=00000002-0000-8888-8000-000000000000)](https://dev.azure.com/Hyperledger/Fabric-Chaincode-Java/_build/latest?definitionId=39&branchName=release-1.4&requestedForFilter=00000002-0000-8888-8000-000000000000)
 
 **Release 2.x GitHub Requested Builds**
-![fcn](https://img.shields.io/azure-devops/build/hyperledger/d07733cd-1e69-47ff-9b57-1c8b53bcd14a/39/release-2.x?requestedForFilter=0c0e01d1-603c-4063-bb80-29b12b0cfdc2)
+[![fcn](https://img.shields.io/azure-devops/build/hyperledger/d07733cd-1e69-47ff-9b57-1c8b53bcd14a/39/release-2.x?requestedForFilter=0c0e01d1-603c-4063-bb80-29b12b0cfdc2)](https://dev.azure.com/Hyperledger/Fabric-Chaincode-Java/_build/latest?definitionId=39&branchName=release-2.x&requestedForFilter=0c0e01d1-603c-4063-bb80-29b12b0cfdc2)
 
 **Release 1.4 GitHub Requested Builds**
-![fcn](https://img.shields.io/azure-devops/build/hyperledger/d07733cd-1e69-47ff-9b57-1c8b53bcd14a/39/release-1.4?requestedForFilter=0c0e01d1-603c-4063-bb80-29b12b0cfdc2)
+[![fcn](https://img.shields.io/azure-devops/build/hyperledger/d07733cd-1e69-47ff-9b57-1c8b53bcd14a/39/release-1.4?requestedForFilter=0c0e01d1-603c-4063-bb80-29b12b0cfdc2)](https://dev.azure.com/Hyperledger/Fabric-Chaincode-Java/_build/latest?definitionId=39&branchName=release-1.4&requestedForFilter=0c0e01d1-603c-4063-bb80-29b12b0cfdc2)
 
 ---
 
@@ -28,16 +28,16 @@ title: CI Pipelines Status
 ## Fabric Chaincode Node
 
 **Release 2.x Nightly Builds**
-![fcn](https://img.shields.io/azure-devops/build/hyperledger/071652b7-a686-427a-a7c9-f9cc6bd4150a/33/release-2.x?requestedForFilter=00000002-0000-8888-8000-000000000000)
+[![fcn](https://img.shields.io/azure-devops/build/hyperledger/071652b7-a686-427a-a7c9-f9cc6bd4150a/33/release-2.x?requestedForFilter=00000002-0000-8888-8000-000000000000)]((https://dev.azure.com/Hyperledger/Fabric-Chaincode-Node/_build/latest?definitionId=33&branchName=release-2.x&requestedForFilter=00000002-0000-8888-8000-000000000000))
 
 **Release 1.4 Nightly Builds**
-![fcn](https://img.shields.io/azure-devops/build/hyperledger/071652b7-a686-427a-a7c9-f9cc6bd4150a/33/release-1.4?requestedForFilter=00000002-0000-8888-8000-000000000000)
+[![fcn](https://img.shields.io/azure-devops/build/hyperledger/071652b7-a686-427a-a7c9-f9cc6bd4150a/33/release-1.4?requestedForFilter=00000002-0000-8888-8000-000000000000)](https://dev.azure.com/Hyperledger/Fabric-Chaincode-Node/_build/latest?definitionId=33&branchName=release-1.4&requestedForFilter=00000002-0000-8888-8000-000000000000)
 
 **Release 2.x GitHub Requested Builds**
-![fcn](https://img.shields.io/azure-devops/build/hyperledger/071652b7-a686-427a-a7c9-f9cc6bd4150a/33/release-2.x?requestedForFilter=0c0e01d1-603c-4063-bb80-29b12b0cfdc2)
+[![fcn](https://img.shields.io/azure-devops/build/hyperledger/071652b7-a686-427a-a7c9-f9cc6bd4150a/33/release-2.x?requestedForFilter=0c0e01d1-603c-4063-bb80-29b12b0cfdc2)](https://dev.azure.com/Hyperledger/Fabric-Chaincode-Node/_build/latest?definitionId=33&branchName=release-2.x&requestedForFilter=0c0e01d1-603c-4063-bb80-29b12b0cfdc2)
 
 **Release 1.4 GitHub Requested Builds**
-![fcn](https://img.shields.io/azure-devops/build/hyperledger/071652b7-a686-427a-a7c9-f9cc6bd4150a/33/release-1.4?requestedForFilter=0c0e01d1-603c-4063-bb80-29b12b0cfdc2)
+[![fcn](https://img.shields.io/azure-devops/build/hyperledger/071652b7-a686-427a-a7c9-f9cc6bd4150a/33/release-1.4?requestedForFilter=0c0e01d1-603c-4063-bb80-29b12b0cfdc2)](https://dev.azure.com/Hyperledger/Fabric-Chaincode-Node/_build/latest?definitionId=33&branchName=release-1.4&requestedForFilter=0c0e01d1-603c-4063-bb80-29b12b0cfdc2)
 
 ---
 
