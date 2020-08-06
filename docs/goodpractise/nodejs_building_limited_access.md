@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Node.js Contracts Building with limited internet access
+parent: Good Practice
 ---
 
 Installing Node.js applications and libraries is inherently reliant on being able to access code repositories on the internet. Many other languages also follow this to a greater or lesser extent.  But there are many and quite legitimate cases where the access to the internet as a whole is controlled via firewalls proxys etc.
@@ -8,14 +9,14 @@ Installing Node.js applications and libraries is inherently reliant on being abl
 If you have a Fabric installation in such a circumstance then it is important to consider if Node.js is the best way to proceed.
 This document is advice to help with this situation. If the options below are not applicable to your situation for whatever reason then it is best to consider a different language. It is not possible to modify Fabric, as the underlying cause is partly related to how node.js works
 
-> Recommendation #0 : Consider the full lifecycle of your contract from dev to production. Is the language choice suitable?
+> **Recommendation #0 : Consider the full lifecycle of your contract from dev to production. Is the language choice suitable?**
 
 
 ## Starting Facts
 
-Important to clear up that there is a subtle but very key difference between the Hyperledger Fabric v1.4 and v2.0 Node.js Contract libraries. v1.4 used two native (C) libraries, whereas v2.0 is 100% JavaScript.  Installing both JavaScript and Native libraries (ideally) needs internet access, but it is harder to work around the native use case.
+Important to clear up that there is a subtle but very key difference between the Hyperledger Fabric v1.4 and v2.0 Node.js Contract libraries. v1.4 used two native (C) libraries, whereas v2.0 is 100% JavaScript.  Installing both JavaScript and Native libraries (ideally) needs internet access, but it is harder to work around the native use case (but not impossible).
 
-> Recommendation #1 :  Use v2.0 Node.js Contract Libraries; the can connect to a v1.4 peer as well as v2.0
+> **Recommendation #1 :  Use v2.0 Node.js Contract Libraries; they can connect to a v1.4 peer as well as v2.0**
 
 ## Handling the JavaScript case
 
@@ -24,7 +25,7 @@ There is a lot of literature online about how to lock the dependencies of the no
 
 `npm shrinkwrap` does have it's flaws (includes all the dev-dependencies) but it is the only way to get an accurate installation. 
 
-> Recommendation #2 : After testing in QA, shrinkwrap your node.js contracts
+> **Recommendation #2 : After testing in QA, shrinkwrap your node.js contracts**
 
 ### Local npmjs repository
 
@@ -43,17 +44,17 @@ The local npmjs server will need seeding however with the modules it needs to ca
 
 The best approach is therefore to seed a repository by, using your *production shrinkwraped contract*, install using the registry set to the local server, but with it internet-connected. That will then cache all the node modules required for the real installation. That can then be disconnected and still able to serve and install. 
 
-> Recommendation #3 : Seed local npmjs repository and use .npmrc to refer to it
+> **Recommendation #3 : Seed local npmjs repository and use .npmrc to refer to it**
 
 ## Native modules
 
-> Recommendation #4 : Use v2 Fabric Contract libraries, to avoid this issue altogether
+> **Recommendation #4 : Use v2 Fabric Contract libraries, to avoid this issue altogether**
 
-If that is not possible then it can be done. There are two native node modules in use for X509 parsing, and for the grpc connectivity. The source code is downloaded from npmjs for these, and then is rebuilt locally. Getting the source is covered by the local npmjs registry.
+If you are not able to use the v2 libraries, then it is possible to manage the native code. There are two native node modules in use for X509 parsing, and for the grpc connectivity. The source code is downloaded from npmjs for these, and then is rebuilt locally. Getting the source is covered by the local npmjs registry.
 
 There are two additional cases however
 
-- Node modules can be downloaded pre-built - but these are downloaded from a URL specified in each package - and this can anywhere
+- Node modules can be downloaded pre-built - but these are downloaded from a URL specified in each package - and this can be anywhere
     - but if this is not available, the installation falls back to rebuilding from source
 - If rebuilding from source, the node.js headers will be needed for the node.js runtime in use, these are downloaded
 
@@ -61,7 +62,7 @@ There are two additional cases however
 For the x509 library, the source is small so is rebuilt every time and is quick.
 For the grpc library, this is downloaded as a pre-built binary. If this is not accessible or found the code is rebuilt from source.  Note though that this is not quick.
 
-> Recommendation #4 : Monitor and increase the timeout of the deploy of the contract to allow for compilation time
+> **Recommendation #5 : Monitor and increase the timeout of the deploy of the contract to allow for compilation time**
 
 To work-around the headers download, for the version of node that will build the code, goto [htps://nodejs.org/dist/](htps://nodejs.org/dist/) and find the version you are using. Then find the file with 'headers' in it.  eg for Node 8.17.0 the full path is [https://nodejs.org/dist/v8.17.0/node-v8.17.0-headers.tar.gz](https://nodejs.org/dist/v8.17.0/node-v8.17.0-headers.tar.gz).
 
@@ -75,7 +76,7 @@ In your contract's `pacakge.json` add this line to reference this file (change a
   "dist-url": "node-v8.17.0-headers.tar.gz"
 ```
 
-> Recommendation #5 : Check the version of node and download a local copy of the node.js headers
+> **Recommendation #6 : Check the version of node and download a local copy of the node.js headers**
 
 When the module is then rebuilt the local copy of the headers will be used, there is no interent access.  It is likely there will be failed internet access in an attempt to download the prebuilt library, but from the installation perspective, everything will proceed.
 

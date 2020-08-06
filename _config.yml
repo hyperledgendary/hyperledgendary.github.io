@@ -6,3 +6,9 @@ remote_theme: pmarsceill/just-the-docs
 heading_anchors: true
 search_enabled: true
 title: Hyperlegendary
+
+footer_content: "This is a community resource, it is not an official support statement or recommendation from Hyperledger, IBM or any other organization offering Hyperledger Fabric services"
+
+aux_links:
+   "Contribute content":
+      - "https://github.com/hyperledgendary/hyperledgendary.github.io"
