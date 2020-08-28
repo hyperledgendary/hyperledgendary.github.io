@@ -38,7 +38,6 @@ In a transaction function in the contract
         // or
         const logger = ctx.logging.getLogger(); // defaults to contract name
 
-
         logger.info('Updated the log level to ',loglevel);
 
     }
