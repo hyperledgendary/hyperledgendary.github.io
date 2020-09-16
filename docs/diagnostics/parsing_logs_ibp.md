@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Parsing Chaincode Logs from IBM Blockchain Platform
-parent: Good Practice
+parent: Diagnostics
 ---
 # IBP Chaincode Log Parse
 
