@@ -16,7 +16,13 @@ This document is advice to help with this situation. If the options below are no
 
 Important to clear up that there is a subtle but very key difference between the Hyperledger Fabric v1.4 and v2.0 Node.js Contract libraries. v1.4 used two native (C) libraries, whereas v2.0 is 100% JavaScript.  Installing both JavaScript and Native libraries (ideally) needs internet access, but it is harder to work around the native use case (but not impossible).
 
-> **Recommendation #1 :  Use v2.0 Node.js Contract Libraries; they can connect to a v1.4 peer as well as v2.0**
+> **Recommendation #1 :  Use v2 Node.js Contract Libraries if possible**
+
+### When can you use the v2 Node.js libraries?
+
+Check the document [COMPATIBILITY.md](https://github.com/hyperledger/fabric-chaincode-node/blob/master/COMPATIBILITY.md) for full information. This document describes the Hyperledger Fabric open source compatibility.  
+
+The key element is that the environment created for running the chaincode is *Node 12*. In terms of the network communication to the peer, the version of peer is not relavent. Where the version of the peer *is* relavent is the impact it has on how runtime for the chaincode is created. In a pure open source Fabric network, this could be configured as described in the above document. For a SaaS offering, such as IBP, this is likely not to be possible. *By default* a v1.4 Peer will create a Node v8 environment, therefore only v1.4 libraries can be used. Similarly, *by default* a v2 Peer will create a Node v12 environment that can run v2.0 (and v1.4 node libraries).
 
 ## Handling the JavaScript case
 
