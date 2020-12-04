@@ -4,6 +4,8 @@ title: Using LogDNA with IBM Blockchain Platform
 parent: Diagnostics
 ---
 
+# Using LogDNA with IBM Blockchain Platform
+
 Using LogDNA to access logs from an IBP Kubernetes cluster can help troubleshoot problems.
 
 Here's how!
