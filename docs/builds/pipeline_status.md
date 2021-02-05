@@ -101,4 +101,4 @@ title: CI Pipelines Status
 
 > [![SDK Go GitHub repo](https://img.shields.io/badge/github.com-repo-brightgreen)](https://github.com/hyperledger/fabric-sdk-go)
 
-- [![SDK Go master status](https://dev.azure.com/hyperledger/fabric-sdk-go/_apis/build/status/hyperledger.fabric-sdk-go?branchName=master)](https://dev.azure.com/hyperledger/fabric-sdk-go/_build/latest?definitionId=19&branchName=master) **master status**
+- [![SDK Go master status](https://dev.azure.com/Hyperledger/Fabric-SDK-Go/_apis/build/status/Fabric-SDK-Go?branchName=main)](https://dev.azure.com/Hyperledger/Fabric-SDK-Go/_build/latest?definitionId=19&branchName=main) **main status**
