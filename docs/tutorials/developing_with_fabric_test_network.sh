@@ -1,0 +1,1 @@
+./network.sh up createChannel -ca -c assetnet -s couchdb
