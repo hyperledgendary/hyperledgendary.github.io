@@ -67,6 +67,12 @@ title: CI Pipelines Status
 
 # SDK Builds
 
+## Fabric Gateway
+
+> [![Fabric Gateway GitHub repo](https://img.shields.io/badge/github.com-repo-brightgreen)](https://github.com/hyperledger/fabric-gateway)
+
+- [![Build Status](https://dev.azure.com/Hyperledger/Fabric-Gateway/_apis/build/status/Fabric-Gateway?branchName=main)](https://dev.azure.com/Hyperledger/Fabric-Gateway/_build/latest?definitionId=132&branchName=main)
+
 ## Fabric SDK Node
 
 > [![SDK Node GitHub repo](https://img.shields.io/badge/github.com-repo-brightgreen)](https://github.com/hyperledger/fabric-sdk-node)
