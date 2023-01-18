@@ -72,9 +72,7 @@ title: CI Pipelines Status
 
 > [![Gateway Java GitHub repo](https://img.shields.io/badge/github.com-repo-brightgreen)](https://github.com/hyperledger/fabric-gateway-java)
 
-- [![Gateway Java main status](https://dev.azure.com/Hyperledger/Fabric-Gateway-Java/_apis/build/status/Fabric-Gateway-Java?branchName=main)](https://dev.azure.com/Hyperledger/Fabric-Gateway-Java/_build/latest?definitionId=38&branchName=main) **main status**
-- [![Gateway Java release-2.2 status](https://dev.azure.com/Hyperledger/Fabric-Gateway-Java/_apis/build/status/Fabric-Gateway-Java?branchName=release-2.2)](https://dev.azure.com/Hyperledger/Fabric-Gateway-Java/_build/latest?definitionId=38&branchName=release-2.2) **release-2.2 status**
-- [![Gateway Java elease-1.4 status](https://dev.azure.com/Hyperledger/Fabric-Gateway-Java/_apis/build/status/Fabric-Gateway-Java?branchName=release-1.4)](https://dev.azure.com/Hyperledger/Fabric-Gateway-Java/_build/latest?definitionId=38&branchName=release-1.4) **release-1.4 status**
+- [![Gateway Java build status](https://github.com/hyperledger/fabric-gateway-java/actions/workflows/schedule.yml/badge.svg)](https://github.com/hyperledger/fabric-gateway-java/actions/workflows/schedule.yml) **Build status**
 - [![Security vulnerability scan](https://github.com/hyperledger/fabric-gateway-java/actions/workflows/vulnerability-scan.yml/badge.svg?event=schedule)](https://github.com/hyperledger/fabric-gateway-java/actions/workflows/vulnerability-scan.yml) **Vulnerability scan**
 
 ## Fabric SDK Java
