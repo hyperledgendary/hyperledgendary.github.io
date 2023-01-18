@@ -66,7 +66,8 @@ title: CI Pipelines Status
 
 > [![SDK Node GitHub repo](https://img.shields.io/badge/github.com-repo-brightgreen)](https://github.com/hyperledger/fabric-sdk-node)
 
-- [![Node SDK build status](https://github.com/hyperledger/fabric-sdk-node/actions/workflows/scheduled.yml/badge.svg)](https://github.com/hyperledger/fabric-sdk-node/actions/workflows/scheduled.yml) **Build status** 
+- [![Node SDK build status](https://github.com/hyperledger/fabric-sdk-node/actions/workflows/scheduled.yml/badge.svg)](https://github.com/hyperledger/fabric-sdk-node/actions/workflows/scheduled.yml) **Build status**
+- [![Node SDK vulnerability scan](https://github.com/hyperledger/fabric-sdk-node/actions/workflows/vulnerability_scan.yml/badge.svg)](https://github.com/hyperledger/fabric-sdk-node/actions/workflows/vulnerability_scan.yml) **Vulnerability scan**
 
 ## Fabric Gateway Java
 
